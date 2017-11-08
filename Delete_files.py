@@ -1,6 +1,6 @@
 # -*- coding:utf-8 -*-
 """
-    this is a program to delete specify files
+    this is a program to delete specified files
 """
 
 import os
@@ -34,7 +34,7 @@ def get_argument():
         usage()
         sys.exit()
 
-def delete_files_with_filename(path, filename=None):
+def delete_files_with_filename(path, filename):
     del_list = os.listdir(path)
     for f in del_list:
         filepath = os.path.join(path, f)
